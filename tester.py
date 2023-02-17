@@ -1,6 +1,6 @@
 import logging
 import datetime
-import greedy
+import greedy, fun
 
 def init_logs():
     logging.basicConfig(filename='coding_practice_session_logs.logs',
@@ -13,7 +13,8 @@ def init_logs():
 
 def main():
     # logging.info(greedy.coin_change_problem_2())
-    logging.info(greedy.coin_change_problem_2())
+    # logging.info(greedy.coin_change_problem_2())
+    logging.info(fun.translate_name("samuel"))
 
 
 if __name__ == '__main__':

@@ -1,7 +1,11 @@
 def translate_name(name):
     name = name.upper().replace(" ","")
+    print(name)
     d = create_alpha_dict()
-    return "ok"
+    s = ""
+    for ind in range(len(name)):
+        s = s + str(d[name[ind]]) + "-"
+    return s
 
 def create_alpha_dict():
     alpha_dict = {}
@@ -9,5 +13,3 @@ def create_alpha_dict():
         alpha_dict[chr(i)] = i - 64
     print (alpha_dict)
     return (alpha_dict)
-    
-translate_name("ab")
