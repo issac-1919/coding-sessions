@@ -1,6 +1,6 @@
 import logging
 import datetime
-import greedy, fun
+import greedy, fun, graphs, trees, linked_lists
 
 def init_logs():
     logging.basicConfig(filename='coding_practice_session_logs.logs',
@@ -12,10 +12,13 @@ def init_logs():
     logging.info("\nCoding Session on {}".format(datetime.datetime.now()))
 
 def main():
-    # logging.info(greedy.coin_change_problem_2())
-    # logging.info(greedy.coin_change_problem_2())
-    logging.info(fun.translate_name("samuel"))
-
+    obj = linked_lists.singly_node()
+    logging.info(obj.node(10))
+    logging.info(obj.node(14))
+    logging.info(obj.node(12))
+    logging.info(obj.get_data())
+    logging.info(obj.has_next())
+    logging.info(obj.display_singly())
 
 if __name__ == '__main__':
     init_logs()
