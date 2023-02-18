@@ -12,14 +12,17 @@ def init_logs():
     logging.info("\nCoding Session on {}".format(datetime.datetime.now()))
 
 def main():
-    obj = linked_lists.singly_node()
-    logging.info(obj.node(10))
-    logging.info(obj.node(14))
-    logging.info(obj.node(12))
-    logging.info(obj.get_data())
-    logging.info(obj.has_next())
-    logging.info(obj.display_singly())
-
+    user_network = [
+        ('samuel','elen'),
+        ('elen', 'karen'),
+        ('brock', 'lesnar'),
+        ('karen', 'samuel'),
+        ('lesnar', 'karen'),
+        ('karen', 'brock'),
+        ('karen', 'elen')
+    ]
+    graph_ob = graphs.graph(user_network)
+    logging.info(graph_ob)
 if __name__ == '__main__':
     init_logs()
     main()
