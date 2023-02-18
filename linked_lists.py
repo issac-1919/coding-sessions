@@ -12,12 +12,43 @@ class singly_llist:
         self.head = node
     
     def set_at_rear(self, data):
-        node = Node(data, self.head)
+        node = Node(data)
         if self.head is None:
             self.head = node
             return
-        for current_node in self:
-            pass
+        current_node = self.head
+        while (current_node.next is not None):
+            current_node = current_node.next
+        
+        current_node.next = node
+    
+    def set_after(self, data, prev_data):
+        
+        if prev_data is None:
+            print("Given data must be present in the linked list\n")
+            return
+
+        prev_ = self.head
+        node = Node(data)
+        while prev_.next is not None:
+            if prev_.data == prev_data:
+                prev_ = node
+                break
+            prev_ = prev_.next
+        
+        node.next = prev_.next
+        prev_.next = node
+
+    def set_at(self, data, pos=0):
+        node = Node(data)
+        idx = 0
+        current_node = self.head
+        while current_node.next:
+            if pos == idx:
+                break
+            current_node = current_node.next
+            idx += 1
+        node.next = current_node.next
         current_node.next = node
     
     def display_singly(self):

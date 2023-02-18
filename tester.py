@@ -17,6 +17,9 @@ def main():
     obj.set_at_front(21)
     obj.set_at_front(512)
     obj.set_at_rear(52)
+    obj.set_after(53, 52)
+    obj.set_at(54,2)
+    obj.set_at(59,8)
     logging.info(obj.display_singly())
     
 if __name__ == '__main__':
