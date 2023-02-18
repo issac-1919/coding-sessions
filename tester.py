@@ -12,14 +12,13 @@ def init_logs():
     logging.info("\nCoding Session on {}".format(datetime.datetime.now()))
 
 def main():
-    obj = linked_lists.singly_node()
-    logging.info(obj.node(10))
-    logging.info(obj.node(14))
-    logging.info(obj.node(12))
-    logging.info(obj.get_data())
-    logging.info(obj.has_next())
+    obj = linked_lists.singly_llist()
+    obj.set_at_front(10)
+    obj.set_at_front(21)
+    obj.set_at_front(512)
+    obj.set_at_rear(52)
     logging.info(obj.display_singly())
-
+    
 if __name__ == '__main__':
     init_logs()
     main()
