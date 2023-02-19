@@ -1,18 +1,28 @@
-class graph():
+
+class graph:
+    """Requires edges to create a graph, creates a graph upon calling the constructor"""
     def __init__(self, edges):
         self.edges = edges
         self.network_graph = {}
         for org, dest in self.edges:
-            """ 
-            ('karen', 'brock'),
-            ('karen', 'elen') 
-            karen -> brock -> elen
-            """
             if org in self.network_graph:
                 self.network_graph[org].append(dest)
             else:
                 self.network_graph[org] = [dest]
-        print(self.network_graph)
+    
+    def get_paths(self, start, end, path=[]):
+        if start == end:
+            return [path]
+        for edge in self.network_graph:
+            adj_nodes = self.network_graph[edge].values()
+            if end in adj_nodes:
+                path = path + [end]
+            else:
+                current_node = ''
+        
+    
+    def display_graph(self):
+        return "{}".format(self.network_graph)
     
     def total_distance(self):
         pass

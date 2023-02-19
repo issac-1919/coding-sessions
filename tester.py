@@ -14,15 +14,19 @@ def init_logs():
 def main():
     user_network = [
         ('samuel','elen'),
-        ('elen', 'karen'),
-        ('brock', 'lesnar'),
-        ('karen', 'samuel'),
-        ('lesnar', 'karen'),
-        ('karen', 'brock'),
-        ('karen', 'elen')
+        ('elen','brock'),
+        ('sandra', 'brock'),
+        ('elen', 'sandra'),
+        ('sandra', 'samuel'),
+        ('brock', 'sandra')
     ]
     graph_ob = graphs.graph(user_network)
-    logging.info(graph_ob)
+    logging.info(graph_ob.display_graph())
+    
+    org = "samuel"
+    dest = "brock"
+    logging.info((f"Path from {org} to {dest}:", graph_ob.get_paths(org, dest)))
+
 if __name__ == '__main__':
     init_logs()
     main()
