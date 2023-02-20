@@ -58,6 +58,49 @@ Coding Session on 2023-02-17 23:16:18.781155
 23:16:18,781 root INFO None
 23:16:18,783 root INFO None
 23:16:18,783 root INFO None
+00:04:29,779 root INFO 
+Coding Session on 2023-02-19 00:04:29.779733
+00:04:29,780 root INFO <graphs.graph object at 0x0000022CA48140D0>
+14:32:35,722 root INFO 
+Coding Session on 2023-02-19 14:32:35.722526
+14:32:35,743 root INFO <graphs.graph object at 0x00000221642BCFA0>
+14:32:35,743 root INFO None
+14:34:23,280 root INFO 
+Coding Session on 2023-02-19 14:34:23.280312
+14:34:23,280 root INFO <graphs.graph object at 0x000001E41255E5E0>
+14:34:23,280 root INFO None
+14:34:34,293 root INFO 
+Coding Session on 2023-02-19 14:34:34.293501
+14:34:34,293 root INFO <graphs.graph object at 0x0000021B6167E5E0>
+14:34:34,293 root INFO None
+14:35:19,946 root INFO 
+Coding Session on 2023-02-19 14:35:19.946899
+14:35:19,947 root INFO <graphs.graph object at 0x000001F982D5BF40>
+14:35:19,947 root INFO [['samuel']]
+14:36:34,787 root INFO 
+Coding Session on 2023-02-19 14:36:34.787034
+14:36:34,787 root INFO <graphs.graph object at 0x000001DABD13E670>
+14:36:34,788 root INFO None
+14:36:49,810 root INFO 
+Coding Session on 2023-02-19 14:36:49.809429
+14:36:49,810 root INFO <graphs.graph object at 0x000001F319F8E640>
+14:36:49,810 root INFO ('Path from samuel to samuel:', [['samuel']])
+14:37:40,364 root INFO 
+Coding Session on 2023-02-19 14:37:40.364485
+14:37:40,364 root INFO <graphs.graph object at 0x0000018948D1D640>
+14:37:40,364 root INFO ('Path from samuel to brock:', None)
+15:00:17,981 root INFO 
+Coding Session on 2023-02-19 15:00:17.981106
+15:00:17,981 root INFO <graphs.graph object at 0x0000023FDE1D2700>
+15:00:17,981 root INFO ('Path from samuel to brock:', None)
+15:00:39,958 root INFO 
+Coding Session on 2023-02-19 15:00:39.958520
+15:00:39,959 root INFO {'samuel': ['elen'], 'elen': ['brock', 'sandra'], 'sandra': ['brock', 'samuel'], 'brock': ['sandra']}
+15:00:39,959 root INFO ('Path from samuel to brock:', None)
+15:12:51,713 root INFO 
+Coding Session on 2023-02-19 15:12:51.713682
+15:12:51,714 root INFO {'samuel': ['elen'], 'elen': ['brock', 'sandra'], 'sandra': ['brock', 'samuel'], 'brock': ['sandra']}
+15:12:51,714 root INFO ('Path from samuel to brock:', None)
 16:01:17,887 root INFO 
 Coding Session on 2023-02-18 16:01:17.887660
 16:01:48,436 root INFO 
