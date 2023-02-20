@@ -1,6 +1,6 @@
 import logging
 import datetime
-import greedy, fun, graphs, trees, linked_lists, div_conq
+import greedy, fun, graphs, trees, linked_lists, div_conq, sorts
 
 def init_logs():
     logging.basicConfig(filename='coding_practice_session_logs.logs',
@@ -12,7 +12,7 @@ def init_logs():
     logging.info("\nCoding Session on {}".format(datetime.datetime.now()))
 
 def main():
-    logging.info(div_conq.tester_1())
+    logging.info(sorts.tester())
 
 if __name__ == '__main__':
     init_logs()
