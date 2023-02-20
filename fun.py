@@ -13,3 +13,7 @@ def create_alpha_dict():
         alpha_dict[chr(i)] = i - 64
     print (alpha_dict)
     return (alpha_dict)
+
+def gen_ints(x):
+    for i in range(x):
+        (yield i)
