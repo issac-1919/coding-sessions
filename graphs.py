@@ -44,3 +44,19 @@ class graph:
         pass
     def maximum_flow(self):
         pass
+
+def tester1():
+    user_network = [
+        ('samuel','elen'),
+        ('elen','brock'),
+        ('sandra', 'brock'),
+        ('elen', 'sandra'),
+        ('sandra', 'samuel'),
+        ('brock', 'sandra')
+    ]
+    graph_ob = graph(user_network)
+    graph_ob.display_graph()
+    
+    org = "samuel"
+    dest = "brock"
+    return(print(f"Path from {org} to {dest}:", graph_ob.get_paths(org, dest)))
