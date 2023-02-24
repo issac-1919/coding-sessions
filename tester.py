@@ -12,7 +12,7 @@ def init_logs():
     logging.info("\nCoding Session on {}".format(datetime.datetime.now()))
 
 def main():
-    logging.info(print(graphs_.tester()))
+    logging.info(graphs_.tester())
 
 if __name__ == '__main__':
     init_logs()
